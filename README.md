@@ -24,8 +24,6 @@ Here we provide a brief overview of the repository structure to get you started,
 
 If you'd like to contribute, please make a pull request! 
 
-Issue to make: add common syntax guide/full contributing guide.
-
 To make a table of contents in markdown, we currently use the `MarkdownTOC` plugin for `SublimeText3`.
 
-If we get to the stage where we're including code snippets etc. then we can start to worry about adding in tests, controlling environments, using make files etc. For now it's all just text files so none of that should be needed (except maybe adding guidance on stripping lines in text files, removing whitespace etc. we should make an issue for this, we should also make an issue for the fact that `github` is being taken over by Microsoft haha).
+If we get to the stage where we're including code snippets etc. then we can start to worry about adding in tests, controlling environments, using make files etc. For now it's all just text files so none of that should be needed.

@@ -23,8 +23,6 @@ A bunch of tips and tricks about how to use Sublime Text 3.
 
 Add alias in `~/.bashrc`
 
-Issue to make: add docs about `bash_profile` and `bashrc`.
-
 ```
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 ```

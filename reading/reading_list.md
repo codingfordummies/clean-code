@@ -1,10 +1,5 @@
 # Reading List
 
-Issues to make once we start our repo:
-
-- how we categorise things, do we need some system e.g. classifying how essential reading is, whether stuff is a website or a book, whether it's free or not, how long it takes to read, how easy it is to use etc. etc.? 
-- whether we limit this doc only to e.g. overview books/websites/resources and put all other 'help' resources only next to where the advice is e.g. a resource on git would go in `software-tips-and-tricks` --> `version-control` --> `git`, next to where it is relevant and not here to ensure we keep things close to where they're useful and only mention them once?
-
 <!-- MarkdownTOC autolink="true" autoanchor="true" markdown_preview="github" -->
 
 - [Overview](#overview)

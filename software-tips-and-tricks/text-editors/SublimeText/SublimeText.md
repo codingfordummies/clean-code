@@ -21,7 +21,13 @@ A bunch of tips and tricks about how to use Sublime Text 3.
 <a id="command-line-alias"></a>
 ## Command Line Alias
 
-Add alias in `~/.bashrc`
+Add alias to your terminal (see `software-tips-and-tricks` --> `terminals`)
+
+```
+alias subl="<path-sublime-text-bin>/subl"
+```
+
+e.g. on a Mac
 
 ```
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"

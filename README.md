@@ -1,6 +1,6 @@
 # Clean Code
 
-Welcome to our share `git` repository. Here we store a bunch of notes, code snippets, makefiles etc. from our own experience getting into the world of computers, code and software engineering. 
+Welcome to our share `git` repository. Here we store a bunch of notes, code snippets, makefiles etc. from our own experience getting into the world of computers, code and software engineering.
 
 <!-- MarkdownTOC autolink="true" autoanchor="true" markdown_preview="github" -->
 
@@ -22,8 +22,21 @@ Here we provide a brief overview of the repository structure to get you started,
 <a id="contributing"></a>
 ## Contributing
 
-If you'd like to contribute, please make a pull request! 
+If you'd like to contribute, please make a pull request!
 
 To make a table of contents in markdown, we currently use the `MarkdownTOC` plugin for `SublimeText3`.
 
 If we get to the stage where we're including code snippets etc. then we can start to worry about adding in tests, controlling environments, using make files etc. For now it's all just text files so none of that should be needed.
+
+## License
+
+This collection is licensed under an Creative Commons
+[CC0 license](https://creativecommons.org/publicdomain/zero/1.0/),
+unless noted otherwise for specific parts:
+
+> The person who associated a work with this deed has dedicated the work to the
+> public domain by waiving all of his or her rights to the work worldwide under
+> copyright law, including all related and neighboring rights, to the extent allowed by law.
+>
+> You can copy, modify, distribute and perform the work, even for commercial
+> purposes, all without asking permission.

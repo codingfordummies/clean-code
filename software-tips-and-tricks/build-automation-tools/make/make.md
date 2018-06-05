@@ -8,6 +8,7 @@
 	- [Tecmint Intro](#tecmint-intro)
 	- [Gnu Intro](#gnu-intro)
 	- [Software Carpentry Tutorial](#software-carpentry-tutorial)
+	- [Make cheat sheet](#make-cheat-sheet)
 
 <!-- /MarkdownTOC -->
 
@@ -64,7 +65,19 @@ GNU's intro to Make.
 
 - Available [online](https://swcarpentry.github.io/make-novice/)
 - free
-- ease of use: unknown, I haven't done it but given it's software carpentry, likely high
-- recommendation: unknown, I haven't done it but given it's software carpentry, likely high
-<a id="--length-unknown-allegedly-3-hours"></a>
-- length: unknown (allegedly 3 hours)
+- ease of use: High
+- recommendation: High (bordering on essential)
+- length: Allegedly 3 hours, much less if you have some experience with the command line/have read other things previously
+- target audience: people with no experience of make but some experience of the command line and doing work which requires multiple steps
+
+*Note* [Project Gutenberg](http://www.gutenberg.org/) doesn't work from within Germany...
+
+<a id="make-cheat-sheet"></a>
+### Make cheat sheet
+
+- Available [online](http://eduardolezcano.com/wp-content/uploads/2016/06/make_cheatsheet.pdf)
+- free
+- ease of use: Moderate
+- recommendation: Moderate
+- length: short (1 page)
+- target audience: people who are regularly using make but need to still look up command

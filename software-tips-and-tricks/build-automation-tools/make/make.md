@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
 - [Resources](#resources)
+	- [Why Use Make by Mike Bostock](#why-use-make-by-mike-bostock)
 	- [Tecmint Intro](#tecmint-intro)
 	- [Gnu Intro](#gnu-intro)
 	- [Software Carpentry Tutorial](#software-carpentry-tutorial)
@@ -19,6 +20,20 @@ Use Robert's stuff for the rest of this.
 
 <a id="resources"></a>
 ## Resources
+
+<a id="why-use-make-by-mike-bostock"></a>
+### Why Use Make by Mike Bostock
+
+Great introduction and explanation of why you should use make.
+
+> You may think of Make as merely a tool for building large binaries or libraries (and it is, almost to a fault), 
+> but it’s much more than that. Makefiles are machine-readable documentation that make your workflow reproducible.
+
+- Available [online](https://bost.ocks.org/mike/make/)
+- free
+- ease of use: high
+- recommendation: high
+- length: short (10 minutes)
 
 <a id="tecmint-intro"></a>
 ### Tecmint Intro
@@ -51,4 +66,5 @@ GNU's intro to Make.
 - free
 - ease of use: unknown, I haven't done it but given it's software carpentry, likely high
 - recommendation: unknown, I haven't done it but given it's software carpentry, likely high
+<a id="--length-unknown-allegedly-3-hours"></a>
 - length: unknown (allegedly 3 hours)

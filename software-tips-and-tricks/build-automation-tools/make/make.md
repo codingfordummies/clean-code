@@ -6,6 +6,7 @@
 - [Resources](#resources)
 	- [Tecmint Intro](#tecmint-intro)
 	- [Gnu Intro](#gnu-intro)
+	- [Software Carpentry Tutorial](#software-carpentry-tutorial)
 
 <!-- /MarkdownTOC -->
 
@@ -42,3 +43,12 @@ GNU's intro to Make.
 - ease of use: unknown, i haven't read it
 - recommendation: unknown
 - length: unknown
+
+<a id="software-carpentry-tutorial"></a>
+### Software Carpentry Tutorial
+
+- Available [online](https://swcarpentry.github.io/make-novice/)
+- free
+- ease of use: unknown, I haven't done it but given it's software carpentry, likely high
+- recommendation: unknown, I haven't done it but given it's software carpentry, likely high
+- length: unknown (allegedly 3 hours)

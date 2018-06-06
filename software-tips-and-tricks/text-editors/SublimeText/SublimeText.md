@@ -44,6 +44,7 @@ Open up Sublime Text
 - `MarkdownTOC`
 - `MarkdownPreview`
 - `SublimeLinter-pylint`
+- `WordCount`
 
 
 <a id="package-guide"></a>

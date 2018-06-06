@@ -67,7 +67,7 @@ GNU's intro to Make.
 - free
 - ease of use: High
 - recommendation: High (bordering on essential)
-- length: Allegedly 3 hours, much less if you have some experience with the command line/have read other things previously
+- length: 3 hours if used as teaching material, much less if you have some experience with the command line/have read other things previously and work through it on your own
 - target audience: people with no experience of make but some experience of the command line and doing work which requires multiple steps
 
 *Note* [Project Gutenberg](http://www.gutenberg.org/) doesn't work from within Germany...

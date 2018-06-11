@@ -5,7 +5,9 @@
 - [Overview](#overview)
 - [Command Line Alias](#command-line-alias)
 - [Setting up](#setting-up)
-- [Zeb's Recommended Packages for Climate Science](#zebs-recommended-packages-for-climate-science)
+- [Zeb's Settings](#zebs-settings)
+	- [Recommended Packages for Climate Science](#recommended-packages-for-climate-science)
+	- [Preferences --> Settings --> User](#preferences----settings----user)
 - [Package Guide](#package-guide)
 	- [MarkdownPreview](#markdownpreview)
 	- [SublimeLinter-pylint](#sublimelinter-pylint)
@@ -16,7 +18,7 @@
 <a id="overview"></a>
 ## Overview
 
-A bunch of tips and tricks about how to use Sublime Text 3. 
+A bunch of tips and tricks about how to use Sublime Text 3.
 
 <a id="command-line-alias"></a>
 ## Command Line Alias
@@ -35,8 +37,11 @@ Open up Sublime Text
 - install package control
 	- `cmd` + `shift` + `p`, `install package control`
 
-<a id="zebs-recommended-packages-for-climate-science"></a>
-## Zeb's Recommended Packages for Climate Science
+<a id="zebs-settings"></a>
+## Zeb's Settings
+
+<a id="recommended-packages-for-climate-science"></a>
+### Recommended Packages for Climate Science
 
 - `Fortran`
 - `git`
@@ -46,6 +51,21 @@ Open up Sublime Text
 - `SublimeLinter-pylint`
 - `WordCount`
 
+<a id="preferences----settings----user"></a>
+### Preferences --> Settings --> User
+
+```
+{
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": false,
+}
+```
 
 <a id="package-guide"></a>
 ## Package Guide
@@ -53,7 +73,7 @@ Open up Sublime Text
 <a id="markdownpreview"></a>
 ### MarkdownPreview
 
-Super useful package to let you preview markdown documents as you right. There's heaps to read about this at [https://facelessuser.github.io/MarkdownPreview/usage/]() I'd be super interested if anyone has found a plugin which does live preview (rather than just preview on demand).
+Super useful package to let you preview markdown documents as you write. There's heaps to read about this at [https://facelessuser.github.io/MarkdownPreview/usage/]() I'd be super interested if anyone has found a plugin which does live preview (rather than just preview on demand).
 
 <a id="sublimelinter-pylint"></a>
 ### SublimeLinter-pylint
@@ -66,7 +86,7 @@ Super useful package to let you preview markdown documents as you right. There's
 - then do `package control: install package` --> `SublimeLinter-pylint`
 - then fix the path settings for this package, `SublimeText` --> `Preferences` --> `Package Settings` (follow this http://www.sublimelinter.com/en/latest/troubleshooting.html#finding-a-linter-executable)
     - e.g.
-    
+
 ```
 {
 	"paths": {
@@ -77,4 +97,4 @@ Super useful package to let you preview markdown documents as you right. There's
 	    "windows": []
 	}
 }
-``` 
+```

@@ -7,14 +7,17 @@
 - [Setting up](#setting-up)
 - [Unofficial Documentation](#unofficial-documentation)
 - [Zeb's Settings](#zebs-settings)
-	- [Recommended Packages for Climate Science](#recommended-packages-for-climate-science)
-	- [Preferences --> Settings --> User](#preferences----settings----user)
-		- [Makefile Preferences --> Settings --> Syntax Specific](#makefile-preferences----settings----syntax-specific)
-	- [Preferences --> Key Bindings](#preferences----key-bindings)
+    - [Recommended Packages for Climate Science](#recommended-packages-for-climate-science)
+    - [Preferences --> Settings --> User](#preferences----settings----user)
+        - [Makefile Preferences --> Settings --> Syntax Specific](#makefile-preferences----settings----syntax-specific)
+    - [Preferences --> Key Bindings](#preferences----key-bindings)
+    - [Snippets](#snippets)
+- [Snippets](#snippets-1)
+    - [Medium Guide to SublimeText Snippets](#medium-guide-to-sublimetext-snippets)
 - [Package Guide](#package-guide)
-	- [MarkdownPreview](#markdownpreview)
-	- [SublimeLinter-pylint](#sublimelinter-pylint)
-		- [Installation](#installation)
+    - [MarkdownPreview](#markdownpreview)
+    - [SublimeLinter-pylint](#sublimelinter-pylint)
+        - [Installation](#installation)
 
 <!-- /MarkdownTOC -->
 
@@ -77,6 +80,10 @@ Open up Sublime Text
     [
         "Vintage"
     ],
+
+    // Hide overview thing on right by default as it just takes up space
+    // You'll probably have to toggle it once manually too
+     "show_minimap": false,
 
     // These help to avoid thinking that you've made changes
     // when all that has changed is a random space or a newline
@@ -345,6 +352,36 @@ Open up Sublime Text
     },
 ]
 ```
+
+<a id="snippets"></a>
+### Snippets
+
+`Makefile_var.sublime-snippet`
+
+```xml
+<snippet>
+    <content><![CDATA[
+${1:VARIABLE}=${2:value}
+$0@echo ${1:VARIABLE}: $(${1:VARIABLE})
+]]></content>
+    <tabTrigger>var</tabTrigger>
+    <scope>source.makefile</scope>
+    <description>Variable definition. Autogenerates code for `make variables` rule.</description>
+</snippet>
+
+```
+
+<a id="snippets-1"></a>
+## Snippets
+
+<a id="medium-guide-to-sublimetext-snippets"></a>
+### Medium Guide to SublimeText Snippets
+
+- available [online](https://medium.freecodecamp.org/a-guide-to-preserving-your-wrists-with-sublime-text-snippets-7541662a53f2)
+- free
+- ease of use: high
+- recommendation: high
+- length: (short < 10 minutes)
 
 <a id="package-guide"></a>
 ## Package Guide

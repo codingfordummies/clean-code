@@ -8,6 +8,7 @@
 - [Zeb's Settings](#zebs-settings)
 	- [Recommended Packages for Climate Science](#recommended-packages-for-climate-science)
 	- [Preferences --> Settings --> User](#preferences----settings----user)
+	- [Preferences --> Key Bindings](#preferences----key-bindings)
 - [Package Guide](#package-guide)
 	- [MarkdownPreview](#markdownpreview)
 	- [SublimeLinter-pylint](#sublimelinter-pylint)
@@ -54,7 +55,7 @@ Open up Sublime Text
 <a id="preferences----settings----user"></a>
 ### Preferences --> Settings --> User
 
-```
+```java
 {
 	"font_size": 13,
 	"ignored_packages":
@@ -65,6 +66,16 @@ Open up Sublime Text
 	"trim_trailing_white_space_on_save": true,
 	"ensure_newline_at_eof_on_save": false,
 }
+```
+
+<a id="preferences----key-bindings"></a>
+### Preferences --> Key Bindings
+
+```java
+[
+	// Duplicate a file
+	{ "keys": ["super+shift+d"], "command": "clone_file"}
+]
 ```
 
 <a id="package-guide"></a>

@@ -89,7 +89,7 @@ Open up Sublime Text
     // when all that has changed is a random space or a newline
     // at the end of the file
 	"trim_trailing_white_space_on_save": true,
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 
 	// Rulers which are enabled by default. These help with
 	// line length considerations

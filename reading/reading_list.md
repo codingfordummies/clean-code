@@ -10,6 +10,7 @@
         - [Refactoring by Martin Fowler](#refactoring-by-martin-fowler)
     - [Scientific Computing](#scientific-computing)
         - [Good Enough Practices in Scientific Computing, Wilson et al.](#good-enough-practices-in-scientific-computing-wilson-et-al)
+            - [Few extra thoughts from Zeb](#few-extra-thoughts-from-zeb)
 
 <!-- /MarkdownTOC -->
 
@@ -65,3 +66,20 @@ Issue to make: we could use a common syntax (e.g. yaml or json) for documenting 
 - length: moderate (20 pages, 20 minutes)
 - required: all
 - ease of use: all
+
+<a id="few-extra-thoughts-from-zeb"></a>
+##### Few extra thoughts from Zeb
+
+If I were using a computer for science, I would rank the most important bits as:
+
+1. tests
+    - these are your sanity checks, every scientist is trained to do them, computers should be no different
+1. make (or other automatic build software)
+    - check that your workflows are reproducible, it will help you (piece of mind if a computer dies) and other researchers
+1. continuous integration
+    - let someone else do the hardwork of running all the tests for you
+1. read 'Good Enough Practices in Scientific Computing' and ask for help from a software engineer
+    - they're worth it, even if they're not around that long
+1. autodocs/sphinx
+    - writing documentation is hard, let it be built for you if you can
+    - *note:* I haven't done this yet so it's a distant fifth

@@ -5,9 +5,10 @@
 - [Overview](#overview)
 - [Contributing](#contributing)
 - [Resources](#resources)
-	- [Software Engineering](#software-engineering)
-		- [Clean Code by Robert C. Martin](#clean-code-by-robert-c-martin)
-		- [Refactoring by Martin Fowler](#refactoring-by-martin-fowler)
+    - [Software Engineering](#software-engineering)
+        - [Clean Code by Robert C. Martin](#clean-code-by-robert-c-martin)
+        - [Refactoring by Martin Fowler](#refactoring-by-martin-fowler)
+        - [Real Python Testing Overview by Kyle Stratis](#real-python-testing-overview-by-kyle-stratis)
 
 <!-- /MarkdownTOC -->
 
@@ -30,7 +31,7 @@ Issue to make: we could use a common syntax (e.g. yaml or json) for documenting 
 #### Clean Code by Robert C. Martin
 
 - availability
-    - [Book Depository](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884) 
+    - [Book Depository](https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884)
     - [Free pdf, no disclaimer about legality](http://oceanofpdf.com/pdf-epub-clean-code-a-handbook-of-agile-software-craftsmanship-download/)
 - recommendation: essential
 - price: free?
@@ -42,10 +43,22 @@ Issue to make: we could use a common syntax (e.g. yaml or json) for documenting 
 #### Refactoring by Martin Fowler
 
 - availability
-    - [Book Depository](https://www.bookdepository.com/Refactoring-Martin-Fowler/9780201485677) 
+    - [Book Depository](https://www.bookdepository.com/Refactoring-Martin-Fowler/9780201485677)
     - [Free pdf, no disclaimer about legality](https://www.csie.ntu.edu.tw/~r95004/Refactoring_improving_the_design_of_existing_code.pdf)
 - recommendation: highly
 - price: free?
 - length: very long (300 pages, 10 hours +)
 - required: Ch. 1, 2, 3, 4, 13, 14, 15
 - ease of use: moderate
+
+<a id="real-python-testing-overview-by-kyle-stratis"></a>
+#### Real Python Testing Overview by Kyle Stratis
+
+- availability
+    - [Free](https://realpython.com/python-cli-testing/)
+- recommendation: highly
+- price: free
+- length: moderate (30-60 minutes)
+- required: all (although only bits should ever be used, overview is amazing)
+- ease of use: moderate (many new terms and lots of other reading to actually learn what is going on)
+

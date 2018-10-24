@@ -1,9 +1,13 @@
 Clean Code
 ==========
 
+.. sec-begin-index
+
 Welcome to our shared Git repository. Here we store a bunch of notes, code snippets,
 makefiles etc. from our own experience getting into the world of computers, code and
 software engineering.
+
+.. sec-end-index
 
 .. contents:: :depth: 2
 
@@ -29,6 +33,8 @@ As we get more and more complex, we will include more things in the repository. 
 now, we have a few key setup elements [todo, add resources on these elements]:
 ``Makefile``, virtual environment, versioneer and our ``docs`` folder but nothing else.
 
+.. sec-begin-license
+
 License
 -------
 
@@ -40,3 +46,5 @@ unless noted otherwise for specific parts:
     copyright law, including all related and neighboring rights, to the extent allowed
     by law. You can copy, modify, distribute and perform the work, even for commercial
     purposes, all without asking permission.
+
+.. sec-end-license

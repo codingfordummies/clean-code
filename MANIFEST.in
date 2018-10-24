@@ -1,0 +1,2 @@
+include versioneer.py
+include src/clean_code/_version.py

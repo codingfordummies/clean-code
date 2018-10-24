@@ -25,10 +25,9 @@ Contributing
 
 If you'd like to contribute, please make a pull request!
 
-
-If we get to the stage where we're including code snippets etc. then we can start to
-worry about adding in tests, controlling environments, using make files etc. For now
-it's all just text files so none of that should be needed.
+As we get more and more complex, we will include more things in the repository. For
+now, we have a few key setup elements [todo, add resources on these elements]:
+``Makefile``, virtual environment, versioneer and our ``docs`` folder but nothing else.
 
 License
 -------

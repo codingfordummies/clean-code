@@ -71,7 +71,7 @@ setup(
     #     ],
     # },
     # include_package_data=True,
-    install_requires=["pyyaml"],
+    install_requires=["pyyaml", "marshmallow"],
     extras_require={"test": ["coverage", "pytest", "pytest-cov"]},
     cmdclass=cmdclass,
 )

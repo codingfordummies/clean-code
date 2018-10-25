@@ -9,19 +9,13 @@ from clean_code.compile_reading_list import ReadingListSchema, format_review
 
 
 valid_dict = {
-    'title': 'title',
-    'author': 'author',
-    'availability': ['list', 'of', 'strings'],
-    'recommendation': {
-        'level': 'moderate',
-        'parts': 'parts',
-    },
-    'price': 'price as string',
-    'length': {
-        'time': "> 10 hrs",
-        'pages': 300,
-    },
-    'ease_of_use': 'moderate',
+    "title": "title",
+    "author": "author",
+    "availability": ["list", "of", "strings"],
+    "recommendation": {"level": "moderate", "parts": "parts"},
+    "price": "price as string",
+    "length": {"time": "> 10 hrs", "pages": 300},
+    "ease_of_use": "moderate",
 }
 
 
@@ -76,4 +70,3 @@ def test_formatting():
     )
 
     assert result == expected
-

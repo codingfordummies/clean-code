@@ -26,15 +26,20 @@ class RecommendationSchema(Schema):
 
 def validate_time(t):
     valid_times = [
-        "<1 min", "1 min", "10 mins", "30 mins",
-        "1 hr", "2 hrs", "5 hrs", "> 10 hrs",
+        "<1 min",
+        "1 min",
+        "10 mins",
+        "30 mins",
+        "1 hr",
+        "2 hrs",
+        "5 hrs",
+        "> 10 hrs",
     ]
 
     return t in valid_times
 
 
 class LengthSchema(Schema):
-
 
     time = fields.String(required=True, validate=validate_time)
     pages = fields.Integer(required=True)
@@ -54,9 +59,7 @@ class ReadingListSchema(Schema):
     price = fields.String(required=True)
     length = fields.Nested(LengthSchema, required=True)
     ease_of_use = fields.String(
-        required=True,
-        attribute="ease of use",
-        validate=validate_ease_of_use
+        required=True, attribute="ease of use", validate=validate_ease_of_use
     )
 
 
@@ -83,27 +86,26 @@ def format_review(review_schema):
     header_underline = "+" * len(header)
 
     formatted_review = (
-        "\n".join([header, header_underline]) +
-         "\n\n"
-         "- availability\n"
+        "\n".join([header, header_underline]) + "\n\n"
+        "- availability\n"
         f"    - {availability_list}\n"
-         "- recommendation\n"
+        "- recommendation\n"
         f"    - {recommendation_level} ({recommended_parts})\n"
-         "- price\n"
+        "- price\n"
         f"    - {price}\n"
-         "- length\n"
+        "- length\n"
         f"    - time: {length_time}\n"
         f"    - pages: {length_pages}\n"
-         "- ease of use\n"
+        "- ease of use\n"
         f"    - {ease_of_use}\n"
     )
 
     return formatted_review
 
+
 def main():
     pkg_root = pkg_resources.resource_filename("clean_code", "__init__.py").replace(
-        join("src", "clean_code", "__init__.py"),
-        ""
+        join("src", "clean_code", "__init__.py"), ""
     )
     docs_root = join(pkg_root, "docs")
 
@@ -113,12 +115,9 @@ def main():
     with open(template_file, "r") as f:
         template = f.read()
 
-
     review_root = join(docs_root, "reading")
     review_sources = [
-        join(review_root, f)
-        for f in listdir(review_root)
-        if f.endswith(".yml")
+        join(review_root, f) for f in listdir(review_root) if f.endswith(".yml")
     ]
     print("Found review files:\n{}\n".format("\n".join(review_sources)))
 

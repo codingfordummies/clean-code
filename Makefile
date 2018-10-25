@@ -18,6 +18,23 @@ docs:
 $(DOCS_DIR)/_build/html/index.html: $(DOCS_DIR)/*.py $(DOCS_DIR)/_templates/*.html $(DOCS_SOURCE_FILES) src/clean_code/*.py README.rst venv
 	source ./venv/bin/activate; cd $(DOCS_DIR); make html
 
+.PHONY: flake8
+flake8:
+	./venv/bin/flake8 src tests
+
+.PHONY: black
+black:
+	@status=$$(git status --porcelain pymagicc tests); \
+	if test "x$${status}" = x; then \
+		./venv/bin/black --exclude _version.py --py36 setup.py src tests docs/conf.py; \
+	else \
+		echo Not trying any formatting. Working directory is dirty ... >&2; \
+	fi;
+
+.PHONY: setup_versioneer
+setup_versioneer: venv
+	./venv/bin/versioneer install
+
 venv: dev-requirements.txt
 	[ -d ./venv ] || python3 -m venv venv
 	./venv/bin/pip install --upgrade pip
@@ -25,10 +42,6 @@ venv: dev-requirements.txt
 	# ./venv/bin/pip install -Ur docs/requirements.txt
 	./venv/bin/pip install -e .[test]
 	touch venv
-
-.PHONY: setup_versioneer
-setup_versioneer: venv
-	./venv/bin/versioneer install
 
 .PHONY: variables
 variables:

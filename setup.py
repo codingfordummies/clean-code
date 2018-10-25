@@ -54,11 +54,7 @@ setup(
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
     ],
-    keywords=[
-        "learning",
-        "coding",
-        "sharing",
-    ],
+    keywords=["learning", "coding", "sharing"],
     packages=find_packages(SOURCE_DIR),  # no tests/docs in `src` so don't need exclude
     package_dir={"": SOURCE_DIR},
     # package_data={
@@ -76,8 +72,6 @@ setup(
     # },
     # include_package_data=True,
     install_requires=["pyyaml"],
-    extras_require={
-        'test': ['coverage', 'pytest', 'pytest-cov'],
-    },
+    extras_require={"test": ["coverage", "pytest", "pytest-cov"]},
     cmdclass=cmdclass,
 )

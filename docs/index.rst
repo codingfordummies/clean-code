@@ -12,6 +12,7 @@ Clean Code
    :glob:
 
    version-control/*
+   text-editors/*
 
 
 .. include:: ../README.rst

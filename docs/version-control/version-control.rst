@@ -5,7 +5,7 @@ Here we provide tips and tricks on different version control systems.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Version control:
+   :caption: Version control
    :glob:
 
-   git/*
+   Git/*

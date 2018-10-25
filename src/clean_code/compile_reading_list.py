@@ -4,7 +4,7 @@ This script reads in our reviews, validates them, formats them and then writes t
 our output file.
 """
 from os import listdir
-from os.path import join
+from os.path import join, realpath, isdir, mkdir
 import pkg_resources
 import yaml
 
@@ -136,6 +136,10 @@ def main():
 
     output_file = join(pkg_root, "docs", "reading_list.rst")
     print("Writing formatted reading guide to:\n{}".format(output_file))
+
+    if not isdir(realpath(output_file)):
+        mkdir(realpath(output_file))
+
     with open(output_file, "w") as of:
         of.write(text_to_write)
 

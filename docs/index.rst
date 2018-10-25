@@ -13,6 +13,7 @@ Clean Code
 
    version-control/*
    text-editors/*
+   reading_list
 
 
 .. include:: ../README.rst

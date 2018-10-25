@@ -1,3 +1,4 @@
 versioneer
 sphinx
 sphinx_rtd_theme
+marshmallow

@@ -75,7 +75,9 @@ setup(
     #     ],
     # },
     # include_package_data=True,
-    # install_requires=["pandas", "f90nml"],
-    # tests_require=["pytest"],
+    install_requires=["pyyaml"],
+    extras_require={
+        'test': ['coverage', 'pytest', 'pytest-cov'],
+    },
     cmdclass=cmdclass,
 )

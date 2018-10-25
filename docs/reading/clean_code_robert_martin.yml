@@ -1,0 +1,15 @@
+title: "Clean Code"
+author: "Robert C. Martin"
+availability:
+  - "`Book depository <https://www.bookdepository.com/Clean-Code-Robert-C-Martin/9780132350884>`_"
+  - "`Free pdf (legality unknown) <http://www.oceanofpdf.com/pdf-epub-clean-code-a-handbook-of-agile-software-craftsmanship-download/>`_"
+recommendation:
+  "level": "essential"
+  "parts": "all"
+price: "free (if you can get hold of pdf, otherwise ~$50AUD)"
+length:
+  time: "> 10 hrs"
+  pages: 450
+ease_of_use: "moderate"
+
+

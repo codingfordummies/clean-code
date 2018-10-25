@@ -8,7 +8,10 @@ Clean Code
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
+   :glob:
+
+   version-control/*
 
 
 .. include:: ../README.rst

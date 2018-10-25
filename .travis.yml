@@ -1,0 +1,21 @@
+# thanks to pymagicc (https://github.com/openclimatedata/pymagicc/blob/master/.travis.yml)
+# and iris (https://github.com/SciTools/iris/blob/master/.travis.yml)
+# for the inspiration for this file
+language: python
+dist: trusty
+sudo: required
+python:
+  - 3.6
+
+before_install:
+  - sudo apt-get update
+install:
+  - pip install --upgrade pip
+  - pip install -e .[test]
+  - pip list
+
+script:
+  - pytest --cov -rfsxEX
+
+after_success:
+  - codecov

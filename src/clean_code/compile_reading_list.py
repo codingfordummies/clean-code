@@ -143,5 +143,5 @@ def main():
         of.write(text_to_write)
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__":  # noqa
+    main()  # noqa

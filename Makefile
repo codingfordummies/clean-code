@@ -6,6 +6,8 @@ SRC_DIR=$(PWD)/src/clean_code
 COMPILE_READING_LIST_SCRIPT=$(SRC_DIR)/compile_reading_list.py
 READING_LIST_SOURCE_FILES:= $(shell find $(DOCS_DIR)/reading -type f -name "*.yml" -print)
 
+test: venv
+	./venv/bin/pytest --cov -rfsxEX --cov-report term-missing
 
 $(DOCS_DIR)/reading_list.rst: $(COMPILE_READING_LIST_SCRIPT) venv $(READING_LIST_SOURCE_FILES) $(DOCS_DIR)/reading_list_template.rst
 	./venv/bin/python $(COMPILE_READING_LIST_SCRIPT)

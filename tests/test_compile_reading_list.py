@@ -5,7 +5,7 @@ import pytest
 from marshmallow import ValidationError
 
 
-from clean_code.compile_reading_list import ReadingListSchema, format_review
+from clean_code.compile_reading_list import ReadingListSchema, format_review, main
 
 
 valid_dict = {
@@ -70,3 +70,7 @@ def test_formatting():
     )
 
     assert result == expected
+
+
+def test_main():
+    main()

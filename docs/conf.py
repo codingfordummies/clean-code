@@ -28,7 +28,7 @@ from clean_code._version import get_versions
 # -- Project information -----------------------------------------------------
 
 project = "Clean Code"
-authors = ", ".join(["Zebedee Nicholls", "Felix Kramer", "Nicholas Hirons"])
+authors = ", ".join(["Coding Yarns"])
 copyright_year = "2018"
 copyright = "{}, {}".format(copyright_year, authors)
 author = authors

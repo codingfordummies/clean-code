@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+
+include docs/reading_list_template.rst
+
+include versioneer.py
+include src/clean_code/_version.py

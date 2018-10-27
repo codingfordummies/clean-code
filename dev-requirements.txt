@@ -1,0 +1,5 @@
+versioneer
+sphinx
+sphinx_rtd_theme
+black
+flake8

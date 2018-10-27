@@ -1,0 +1,15 @@
+title: "Refactoring"
+author: "Martin Fowler"
+availability:
+  - "`Book depository <https://www.bookdepository.com/Refactoring-Martin-Fowler/9780201485677>`_"
+  - "`Free pdf (legality unknown) <https://www.csie.ntu.edu.tw/~r95004/Refactoring_improving_the_design_of_existing_code.pdf>`_"
+recommendation:
+  "level": "high"
+  "parts": "Ch. 1, 2, 3, 4, 13, 14, 15"
+price: "free (if you can get hold of pdf, otherwise ~$65AUD)"
+length:
+  time: "> 10 hrs"
+  pages: 300
+ease_of_use: "moderate"
+
+

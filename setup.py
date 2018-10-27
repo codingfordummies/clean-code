@@ -57,20 +57,6 @@ setup(
     keywords=["learning", "coding", "sharing"],
     packages=find_packages(SOURCE_DIR),  # no tests/docs in `src` so don't need exclude
     package_dir={"": SOURCE_DIR},
-    # package_data={
-    #     "": ["*.csv"],
-    #     "pymagicc": [
-    #         "MAGICC6/*.txt",
-    #         "MAGICC6/out/.gitkeep",
-    #         "MAGICC6/run/*.CFG",
-    #         "MAGICC6/run/*.exe",
-    #         "MAGICC6/run/*.IN",
-    #         "MAGICC6/run/*.MON",
-    #         "MAGICC6/run/*.prn",
-    #         "MAGICC6/run/*.SCEN",
-    #     ],
-    # },
-    # include_package_data=True,
     install_requires=["pyyaml", "marshmallow"],
     extras_require={"test": ["coverage", "pytest", "pytest-cov"]},
     cmdclass=cmdclass,

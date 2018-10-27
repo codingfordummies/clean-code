@@ -11,18 +11,6 @@ software engineering.
 
 .. contents:: :depth: 2
 
-Overview
---------
-
-Here we provide a brief overview of the repository structure to get you started, from
-there things are hopefully fairly obvious (if not, make a pull request or start an
-issue to help us fix this!).
-
-- reading
-    - a collection of recommended resources with some of our comments
-- software-tips-and-tricks
-    - our favourite tips and tricks for using various bits of software
-
 
 Contributing
 ------------

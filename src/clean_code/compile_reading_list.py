@@ -65,6 +65,7 @@ class ReadingListSchema(Schema):
     ease_of_use = fields.String(
         required=True, attribute="ease of use", validate=validate_ease_of_use
     )
+    comment = fields.String()
 
 
 def load_review_yml(review_yml_dict):
@@ -121,6 +122,18 @@ def format_review(review_schema):
         "- ease of use\n"
         f"    - {ease_of_use}\n"
     )
+
+    comment_key = "comment"
+    if comment_key in review_schema:
+        formatted_review = (
+            "{}"
+            "\n"
+            "Other comments"
+            "~~~~~~~~~~~~~~"
+            "\n"
+            "{}"
+            "".format(formatted_review, review_schema[comment_key])
+        )
 
     return formatted_review
 

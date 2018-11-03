@@ -31,11 +31,16 @@ def test_load_review_yml():
 
     assert validated_schema.data["ease of use"] == "moderate"
 
+    optional_keys = ["comment"]
     for key in valid_dict:
-        invalid_dict = deepcopy(valid_dict)
-        invalid_dict.pop(key)
-        with pytest.raises(ValidationError):
-            load_review_yml(invalid_dict)
+        altered_dict = deepcopy(valid_dict)
+        altered_dict.pop(key)
+        if key in optional_keys:
+            valid_schema = load_review_yml(altered_dict)
+            assert key not in valid_schema
+        else:
+            with pytest.raises(ValidationError):
+                load_review_yml(altered_dict)
 
     invalid_dict = deepcopy(valid_dict)
     invalid_dict["recommendation"]["level"] = "junk"
@@ -85,6 +90,11 @@ def test_formatting():
         "    - pages: 300\n"
         "- ease of use\n"
         "    - moderate\n"
+        "\n"
+        "Other comments"
+        "~~~~~~~~~~~~~~"
+        "\n"
+        "any old string"
     )
 
     assert result == expected

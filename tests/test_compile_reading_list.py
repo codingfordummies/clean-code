@@ -1,4 +1,5 @@
 from copy import deepcopy
+import re
 
 
 import pytest
@@ -37,7 +38,15 @@ def test_validation_and_renaming():
 
     invalid_dict = deepcopy(valid_dict)
     invalid_dict["length"]["time"] = "junk"
-    with pytest.raises(ValidationError):
+    error_msg = re.escape(
+        "Invalid level: length - time. Available options are:\n"
+        "- essential\n"
+        "- high\n"
+        "- moderate\n"
+        "- low\n"
+        "- zero\n"
+    )
+    with pytest.raises(ValidationError, match=error_msg):
         ReadingListSchema(strict=True).load(invalid_dict)
 
     invalid_dict = deepcopy(valid_dict)

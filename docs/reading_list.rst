@@ -34,7 +34,7 @@ Good Enough Practices in Scientific Computing by Greg Wilson et al.
 - recommendation
     - high (all)
 - price
-    - free (if you can get hold of pdf, otherwise ~$65AUD)
+    - free
 - length
     - time: 30 mins
     - pages: 20

@@ -28,7 +28,7 @@ VALIDATIONS = {
         "> 10 hrs",
     ],
 }
-"""dict: Valid fields for given levels
+"""dict: Valid options for our reading list fields
 """
 
 

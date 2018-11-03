@@ -22,6 +22,7 @@ valid_dict = {
     "price": "price as string",
     "length": {"time": "> 10 hrs", "pages": 300},
     "ease_of_use": "moderate",
+    "comment": "any old string",
 }
 
 

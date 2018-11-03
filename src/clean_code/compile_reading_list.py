@@ -11,21 +11,13 @@ import yaml
 
 from marshmallow import Schema, fields
 from marshmallow.schema import UnmarshalResult
+from marshmallow.exceptions import ValidationError
 
 
-def validate_level(l):
-    valid_levels = ["essential", "high", "moderate", "low", "zero"]
-
-    return l in valid_levels
-
-
-class RecommendationSchema(Schema):
-    level = fields.String(required=True, validate=validate_level)
-    parts = fields.String(required=True)
-
-
-def validate_time(t):
-    valid_times = [
+VALIDATIONS = {
+    "level": ["essential", "high", "moderate", "low", "zero"],
+    "ease_of_use": ["trivial", "easy", "moderate", "hard", "nuclear"],
+    "time": [
         "<1 min",
         "1 min",
         "10 mins",
@@ -34,9 +26,23 @@ def validate_time(t):
         "2 hrs",
         "5 hrs",
         "> 10 hrs",
-    ]
+    ],
+}
+"""dict: Valid fields for given levels
+"""
 
-    return t in valid_times
+
+def validate_level(l):
+    return l in VALIDATIONS["level"]
+
+
+class RecommendationSchema(Schema):
+    level = fields.String(required=True, validate=validate_level)
+    parts = fields.String(required=True)
+
+
+def validate_time(t):
+    return t in VALIDATIONS["time"]
 
 
 class LengthSchema(Schema):
@@ -46,9 +52,7 @@ class LengthSchema(Schema):
 
 
 def validate_ease_of_use(u):
-    valid_ease_of_uses = ["trivial", "easy", "moderate", "hard", "nuclear"]
-
-    return u in valid_ease_of_uses
+    return u in VALIDATIONS["ease_of_use"]
 
 
 class ReadingListSchema(Schema):
@@ -61,6 +65,24 @@ class ReadingListSchema(Schema):
     ease_of_use = fields.String(
         required=True, attribute="ease of use", validate=validate_ease_of_use
     )
+
+
+def load_review_yml(review_yml_dict):
+    try:
+        return ReadingListSchema(strict=True).load(review_yml_dict)
+    except ValidationError as err:
+        err_str = "{}".format(err)
+        err_title = err_str.split("'")[1]
+        err_keys = err_str.split("'")[1::2]
+        for err_title in err_keys[::-1]:
+            if (err_title in VALIDATIONS) and ("Invalid value" in err_str):
+                error_msg = (
+                    "Invalid value for '{}'. Available options are:\n"
+                    "- {}\n".format(err_title, "\n- ".join(VALIDATIONS[err_title]))
+                )
+                raise ValidationError(error_msg)
+
+        raise err
 
 
 def format_review(review_schema):
@@ -126,7 +148,8 @@ def main():
         with open(rs, "r") as f:
             rs_dict = yaml.load(f)
 
-        rs_validated = ReadingListSchema(strict=True).load(rs_dict)
+        rs_validated = load_review_yml(rs_dict)
+
         reviews.append(format_review(rs_validated))
 
     reviews = "\n\n".join(reviews)

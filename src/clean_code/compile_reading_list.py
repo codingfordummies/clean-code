@@ -128,10 +128,10 @@ def format_review(review_schema):
         formatted_review = (
             "{}"
             "\n"
-            "Other comments"
-            "~~~~~~~~~~~~~~"
+            "Other comments\n"
+            "~~~~~~~~~~~~~~\n"
             "\n"
-            "{}"
+            "{}\n"
             "".format(formatted_review, review_schema[comment_key])
         )
 

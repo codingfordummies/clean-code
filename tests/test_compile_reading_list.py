@@ -91,10 +91,10 @@ def test_formatting():
         "- ease of use\n"
         "    - moderate\n"
         "\n"
-        "Other comments"
-        "~~~~~~~~~~~~~~"
+        "Other comments\n"
+        "~~~~~~~~~~~~~~\n"
         "\n"
-        "any old string"
+        "any old string\n"
     )
 
     assert result == expected

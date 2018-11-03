@@ -26,6 +26,22 @@ Clean Code by Robert C. Martin
     - moderate
 
 
+Good Enough Practices in Scientific Computing by Greg Wilson et al.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- availability
+    - `Free pdf <https://arxiv.org/pdf/1609.00037v2.pdf>`_
+- recommendation
+    - high (all)
+- price
+    - free (if you can get hold of pdf, otherwise ~$65AUD)
+- length
+    - time: 30 mins
+    - pages: 20
+- ease of use
+    - moderate
+
+
 Refactoring by Martin Fowler
 ++++++++++++++++++++++++++++
 

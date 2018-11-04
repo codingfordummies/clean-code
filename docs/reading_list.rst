@@ -30,7 +30,7 @@ Good Enough Practices in Scientific Computing by Greg Wilson et al.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 - availability
-    - `Free pdf <https://arxiv.org/pdf/1609.00037v2.pdf>`_
+    - `Free pdf <https://doi.org/10.1371/journal.pcbi.1005510>`_
 - recommendation
     - high (all)
 - price

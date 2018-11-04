@@ -26,6 +26,27 @@ Clean Code by Robert C. Martin
     - moderate
 
 
+Django getting started guide by Django team
++++++++++++++++++++++++++++++++++++++++++++
+
+- availability
+    - `Free online <https://docs.djangoproject.com/en/2.0/intro/>`_
+- recommendation
+    - high (all)
+- price
+    - free
+- length
+    - time: 5 hrs
+    - pages: 0
+- ease of use
+    - easy
+
+**Other comments**
+
+[To do, take all their Python introductory recommendations and put them in here somehow]
+
+
+
 Good Enough Practices in Scientific Computing by Greg Wilson et al.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

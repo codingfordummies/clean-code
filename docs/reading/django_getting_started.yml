@@ -1,0 +1,14 @@
+title: "Django getting started guide"
+author: "Django team"
+availability:
+  - "`Free online <https://docs.djangoproject.com/en/2.0/intro/>`_"
+recommendation:
+  "level": "high"
+  "parts": "all"
+price: "free"
+length:
+  time: "5 hrs"
+  pages: 0
+ease_of_use: "easy"
+comment: >
+  [To do, take all their Python introductory recommendations and put them in here somehow]

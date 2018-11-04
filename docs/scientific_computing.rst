@@ -6,6 +6,8 @@ Scientific computing
 Zeb's list of important tools
 -----------------------------
 
+.. _zeb-development-tools:
+
 Development tools
 +++++++++++++++++
 

@@ -17,7 +17,7 @@ docs:
 	make $(DOCS_DIR)/_build/html/index.html
 
 # Have to run build twice to get stuff in right place
-$(DOCS_DIR)/_build/html/index.html: $(DOCS_DIR)/*.py $(DOCS_DIR)/_templates/*.html $(DOCS_SOURCE_FILES) src/clean_code/*.py README.rst venv
+$(DOCS_DIR)/_build/html/index.html: $(DOCS_DIR)/*.py $(DOCS_DIR)/_templates/*.html $(DOCS_SOURCE_FILES) src/clean_code/*.py README.rst venv $(DOCS_DIR)/reading_list.rst
 	source ./venv/bin/activate; cd $(DOCS_DIR); make html
 
 .PHONY: flake8

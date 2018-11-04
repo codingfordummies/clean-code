@@ -91,8 +91,7 @@ def test_formatting():
         "- ease of use\n"
         "    - moderate\n"
         "\n"
-        "Other comments\n"
-        "~~~~~~~~~~~~~~\n"
+        "**Other comments**\n"
         "\n"
         "any old string\n"
     )

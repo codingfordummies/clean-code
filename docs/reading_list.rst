@@ -41,30 +41,9 @@ Good Enough Practices in Scientific Computing by Greg Wilson et al.
 - ease of use
     - moderate
 
-Other comments
-~~~~~~~~~~~~~~
+**Other comments**
 
-[update based on stuff in netCDFSCM] If Zeb were to write this, his comments would be:
-
-    #. tests
-
-        - these are your sanity checks, every scientist is trained to do them, computers should be no different
-
-    #. make (or other automatic build software)
-
-        - check that your workflows are reproducible, it will help you (piece of mind if a computer dies) and other researchers
-
-    #. continuous integration
-
-        - let someone else do the hardwork of running all the tests for you
-
-    #. ask for help from a software engineer
-
-        - they're worth it, even if they're not around that long
-
-    #. autodocs/sphinx
-
-        - writing documentation is hard, let it be built for you if you can
+There are more thoughts on this subject in :ref:`scientific computing <scientific-computing>`.
 
 
 

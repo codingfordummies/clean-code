@@ -15,6 +15,7 @@ Clean Code
    text-editors/*
    reading_list
    scientific_computing
+   development
 
 
 .. include:: ../README.rst

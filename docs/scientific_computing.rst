@@ -17,7 +17,10 @@ Links are included with each of these tools to useful starting points.
 - Virtual environments: `Conda virtual environments <https://medium.freecodecamp.org/why-you-need-python-environments-and-how-to-manage-them-with-conda-85f155f4353c>`_
 
     - note the common gotcha that ``source activate`` has now changed to ``conda activate``
-    - we use conda instead of pure pip environments because they help us deal with more complicated dependencies: if you want to learn more about pip and pip virtual environments, check out `this introduction <https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/>`_
+    - we use conda instead of pure pip environments because they help us deal with more complicated dependencies: if you want to learn more about pip and pip virtual environments, check out:
+
+        - `this introduction <https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/>`_
+        - `this longer piece <https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/>`_ which explains the details
 
 - Tests: many available frameworks, here's `a link to testing intro that Zeb likes <https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest>`_
 

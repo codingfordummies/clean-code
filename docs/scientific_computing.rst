@@ -50,3 +50,47 @@ Here we provide a list of these along with useful resources.
 - `Regular expressions <https://www.oreilly.com/ideas/an-introduction-to-regular-expressions>`_
 
     - `regex101.com <regex101.com>`_ to helps write and check regular expressions, make sure the language is set to Python to make your life easy!
+
+
+Setting up a repository
+-----------------------
+
+*Disclaimer: This is according to Zeb. Given the pace at which things change, this section is likely to always be out of date but should at least provide a starting point.*
+
+
+
+- Decide on a license [add links to useful places to help decide on a license]
+- General repo setup
+    - where is source
+    - where are tests
+        - tests structure
+        - code coverage stuff
+    - where are docs
+        - how to write them
+            - where to put stuff
+            - Makefiles
+        - where do source files go
+    - where do notebooks go
+    - versioneer
+    - gitignore
+    - readthedocs
+    - stickler
+    - CI (i.e. Travis)
+    - CHANGELOG
+    - README
+    - packaging
+        - setup.py
+        - setup.cfg
+        - MANIFEST.IN
+    - Makefile
+        - venv
+        - tests
+            - source
+            - notebooks
+        - docs
+        - black, flake8
+        - releasing on PyPI
+    - requirements
+    - .github
+        - Issue templates
+        - PR templates

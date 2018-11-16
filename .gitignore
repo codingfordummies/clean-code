@@ -1,6 +1,3 @@
-# Files which are built as part of the docs compilation process
-docs/reading_list.rst
-
 # Mac stuff
 *.DS_Store
 

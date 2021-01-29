@@ -47,6 +47,27 @@ There are more thoughts on this subject in :ref:`scientific computing <scientifi
 
 
 
+Machine Learning for Time Series Data in Python by Brett Naul
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- availability
+    - `YouTube <https://www.youtube.com/watch?v=ZgHGCfwExw0>`_
+- recommendation
+    - moderate (All)
+- price
+    - free
+- length
+    - time: 30 mins
+    - pages: 0
+- ease of use
+    - moderate
+
+**Other comments**
+
+I haven't watched this yet so categories are made up
+
+
+
 Refactoring by Martin Fowler
 ++++++++++++++++++++++++++++
 
